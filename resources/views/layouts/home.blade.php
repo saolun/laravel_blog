@@ -164,7 +164,7 @@
             <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <dt>{{ __('Rights') }}</dt>
                 <dd>{{ __("Licenses") }}：<a rel="nofollow" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">CC BY-NC 4.0</a></dd>
-                <dd>{{ __('Copyright') }}：© 2014-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>
+                <dd>{{ __('Copyright') }}：© 2014-{{ date('Y') }} {{ config('app.url') }}</dd>
                 @if(!empty(config('bjyblog.admin_email')))
                     <dd>{{ __('Contact Email') }}：<a href="mailto:{!! config('bjyblog.admin_email') !!}">{!! config('bjyblog.admin_email') !!}</a></dd>
                 @endif
